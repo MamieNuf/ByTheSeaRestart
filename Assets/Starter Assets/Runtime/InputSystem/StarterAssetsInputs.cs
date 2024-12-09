@@ -26,13 +26,13 @@ namespace StarterAssets
 			MoveInput(value.Get<Vector2>());
 		}
 
-		public void OnLook(InputValue value)
-		{
-			if(cursorInputForLook)
-			{
-				LookInput(value.Get<Vector2>());
-			}
-		}
+		// public void OnLook(InputValue value)
+		// {
+		// 	if(cursorInputForLook)
+		// 	{
+		// 		LookInput(value.Get<Vector2>());
+		// 	}
+		// }
 
 		public void OnJump(InputValue value)
 		{
