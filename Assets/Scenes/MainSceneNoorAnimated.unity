@@ -1286,9 +1286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 152830184}
-  - component: {fileID: 152830186}
   - component: {fileID: 152830185}
-  - component: {fileID: 152830187}
   m_Layer: 8
   m_Name: Left_ToesEnd
   m_TagString: Untagged
@@ -1332,32 +1330,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &152830186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152830183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 712937b9e78a2e34ba5fa03d2075e2b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thirdPersonController: {fileID: 1189408723}
---- !u!114 &152830187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152830183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0af87f104cf284c41bf211c7af620618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInWaveZone: 0
 --- !u!1001 &158257851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6048,6 +6020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 775401841}
   - component: {fileID: 775401840}
+  - component: {fileID: 775401842}
   m_Layer: 7
   m_Name: WaterDetectionVolume
   m_TagString: Water
@@ -6085,12 +6058,25 @@ Transform:
   m_GameObject: {fileID: 775401839}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.13, y: 11.26, z: -5.02}
+  m_LocalPosition: {x: 17.19, y: 11.26, z: -0.56}
   m_LocalScale: {x: 7.04, y: 2.09, z: 11.31}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &775401842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775401839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffeb277b7c0edc43882e6709649d427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCharacterInWaveZone: 0
 --- !u!1 &779883550
 GameObject:
   m_ObjectHideFlags: 0
@@ -8025,7 +8011,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1076577193}
   - component: {fileID: 1076577195}
-  - component: {fileID: 1076577194}
   m_Layer: 0
   m_Name: Left_Foot
   m_TagString: Untagged
@@ -8049,19 +8034,6 @@ Transform:
   - {fileID: 1391251406}
   m_Father: {fileID: 263549187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1076577194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076577192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0af87f104cf284c41bf211c7af620618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInWaveZone: 0
 --- !u!65 &1076577195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9475,7 +9447,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1221416319}
-  - component: {fileID: 1221416320}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -9499,18 +9470,6 @@ Transform:
   - {fileID: 1390508682}
   m_Father: {fileID: 1189408726}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1221416320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221416318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b86239173249b744599141d4b812cc72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1234054906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11885,7 +11844,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1535116653}
   - component: {fileID: 1535116655}
-  - component: {fileID: 1535116654}
   m_Layer: 0
   m_Name: Right_Foot
   m_TagString: Untagged
@@ -11909,19 +11867,6 @@ Transform:
   - {fileID: 1471801045}
   m_Father: {fileID: 1653476204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1535116654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535116652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0af87f104cf284c41bf211c7af620618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInWaveZone: 0
 --- !u!65 &1535116655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16379,9 +16324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2007014085}
-  - component: {fileID: 2007014087}
   - component: {fileID: 2007014086}
-  - component: {fileID: 2007014088}
   m_Layer: 8
   m_Name: Right_ToesEnd
   m_TagString: Untagged
@@ -16425,32 +16368,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2007014087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007014084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 712937b9e78a2e34ba5fa03d2075e2b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thirdPersonController: {fileID: 1189408723}
---- !u!114 &2007014088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007014084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0af87f104cf284c41bf211c7af620618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInWaveZone: 0
 --- !u!1001 &2009797673
 PrefabInstance:
   m_ObjectHideFlags: 0

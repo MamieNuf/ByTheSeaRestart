@@ -283,6 +283,7 @@ namespace StarterAssets
         {
             if (Grounded)
             {
+                Debug.Log("Player is grounded");
                 // reset the fall timeout timer
                 _fallTimeoutDelta = FallTimeout;
 
@@ -297,13 +298,17 @@ namespace StarterAssets
                 if (_verticalVelocity < 0.0f)
                 {
                     _verticalVelocity = -2f;
+                    
                 }
 
                 // Jump
                 if (_input.jump && _jumpTimeoutDelta <= 0.0f)
                 {
+                    Debug.Log("Jump triggered!");
+
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                    
 
                     // update animator if using character
                     if (_hasAnimator)
@@ -316,10 +321,12 @@ namespace StarterAssets
                 if (_jumpTimeoutDelta >= 0.0f)
                 {
                     _jumpTimeoutDelta -= Time.deltaTime;
+                    
                 }
             }
             else
             {
+                Debug.Log("Player is not grounded");
                 // reset the jump timeout timer
                 _jumpTimeoutDelta = JumpTimeout;
 
@@ -345,6 +352,7 @@ namespace StarterAssets
             if (_verticalVelocity < _terminalVelocity)
             {
                 _verticalVelocity += Gravity * Time.deltaTime;
+               
             }
         }
 
