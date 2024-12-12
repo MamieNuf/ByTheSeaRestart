@@ -8,6 +8,7 @@ TagManager:
   - WaterZone
   - WaveZone
   - Water
+  - Wave
   layers:
   - Default
   - TransparentFX
