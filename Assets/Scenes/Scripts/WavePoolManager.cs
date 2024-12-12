@@ -11,6 +11,7 @@ public class WaveManager : MonoBehaviour
     public float waveSpeed = 5f; // Vitesse de déplacement des vagues
     public float waveFrequency = 1f; // Fréquence du mouvement sinusoïdal
     public float waveAmplitude = 1f; // Amplitude du mouvement sinusoïdal
+    public Material waveMaterial; // Shader/Material à appliquer aux vagues
 
     private Queue<GameObject> wavePool = new Queue<GameObject>(); // Pool de vagues
     private Dictionary<GameObject, float> waveStartTimes = new Dictionary<GameObject, float>(); // Temps de départ de chaque vague
@@ -22,6 +23,17 @@ public class WaveManager : MonoBehaviour
         {
             GameObject wave = Instantiate(wavePrefab);
             wave.SetActive(false);
+
+            // Appliquer le material spécifié si disponible
+            if (waveMaterial != null)
+            {
+                Renderer waveRenderer = wave.GetComponent<Renderer>();
+                if (waveRenderer != null)
+                {
+                    waveRenderer.material = waveMaterial;
+                }
+            }
+
             wavePool.Enqueue(wave);
         }
 
@@ -56,8 +68,8 @@ public class WaveManager : MonoBehaviour
 
                 // Appliquer le mouvement sinusoïdal sur l'axe Y
                 wave.transform.position = new Vector3(
-                    wave.transform.position.x, 
-                    startPoint.position.y + sineOffset, 
+                    wave.transform.position.x,
+                    startPoint.position.y + sineOffset,
                     wave.transform.position.z
                 );
 
@@ -73,6 +85,7 @@ public class WaveManager : MonoBehaviour
         }
     }
 }
+
 
 
 

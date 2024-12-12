@@ -5177,9 +5177,10 @@ MonoBehaviour:
   startPoint: {fileID: 1471214984}
   endPoint: {fileID: 2032014316}
   poolSize: 10
-  waveSpeed: 5
-  waveFrequency: 1
-  waveAmplitude: 1
+  waveSpeed: 1
+  waveFrequency: 0.5
+  waveAmplitude: 0.75
+  waveMaterial: {fileID: 0}
 --- !u!4 &692360426
 Transform:
   m_ObjectHideFlags: 0
@@ -7526,6 +7527,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6766864954544891131, guid: b5b15374436413d4aa9190e2b4bd6135, type: 3}
   m_PrefabInstance: {fileID: 969002360}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1000516770
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7658256087552510357, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_Name
+      value: WavePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658256087552510357, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658256087552510357, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_TagString
+      value: Wave
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019124872411149289, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 9.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019124872411149289, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019124872411149289, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019124872411149289, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019124872411149289, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9831326
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019124872411149289, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019124872411149289, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.18289408
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019124872411149289, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019124872411149289, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019124872411149289, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 21.077
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019124872411149289, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd95f794788ec1749bba03524558dd5b, type: 3}
 --- !u!1001 &1008356653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11371,7 +11441,7 @@ Transform:
   m_GameObject: {fileID: 1471214983}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.16944534, z: -0, w: 0.9855396}
-  m_LocalPosition: {x: 4.85, y: 10.59, z: -4.39}
+  m_LocalPosition: {x: 4.14, y: 10.59, z: -6.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16854,7 +16924,7 @@ Transform:
   m_GameObject: {fileID: 2032014315}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.2051697, z: -0, w: 0.9787264}
-  m_LocalPosition: {x: 17.09, y: 10.902, z: -8.17}
+  m_LocalPosition: {x: 13.87, y: 10.902, z: -7.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17995,3 +18065,4 @@ SceneRoots:
   - {fileID: 692360426}
   - {fileID: 1471214984}
   - {fileID: 2032014316}
+  - {fileID: 1000516770}
