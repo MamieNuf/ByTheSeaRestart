@@ -28,15 +28,18 @@ MonoBehaviour:
   version: 0
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LowpolyBeach_Water_DemoScene_Day
-  m_Shader: {fileID: -6465566751694194690, guid: 02a7126de395b9c4f9ce2ec1b5673c96,
-    type: 3}
-  m_ShaderKeywords: _ENABLEMAXBYTRANSPARENCY
+  m_Shader: {fileID: -6465566751694194690, guid: 02a7126de395b9c4f9ce2ec1b5673c96, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _ENABLEMAXBYTRANSPARENCY
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -45,6 +48,7 @@ Material:
   disabledShaderPasses:
   - SHADOWCASTER
   - DepthOnly
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -159,7 +163,7 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 1
     - _Transparency: 0.824
-    - _WaveAmplitude: 0.06
+    - _WaveAmplitude: 0.24
     - _WaveNoiseScale: 730.9
     - _WaveSpeed: 1.41
     - _WindAngle: 0
