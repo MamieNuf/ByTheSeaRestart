@@ -50,7 +50,7 @@ public class WaveManager : MonoBehaviour
             wave.SetActive(true);
             waveStartTimes[wave] = Time.time; // Enregistrer le temps de départ pour le mouvement sinusoïdal
             wavePool.Enqueue(wave); // Réinsérer dans le pool après utilisation
-            Debug.Log($"Vague générée à : {wave.transform.position}");
+            
         }
     }
 
@@ -73,13 +73,13 @@ public class WaveManager : MonoBehaviour
                     wave.transform.position.z
                 );
 
-                Debug.Log($"Position actuelle de la vague : {wave.transform.position}");
+                
 
                 // Désactiver la vague si elle dépasse le EndPoint
                 if (wave.transform.position.x > endPoint.position.x)
                 {
                     wave.SetActive(false);
-                    Debug.Log($"Vague désactivée à : {wave.transform.position}");
+                    
                 }
             }
         }
