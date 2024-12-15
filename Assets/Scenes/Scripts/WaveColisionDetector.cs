@@ -4,22 +4,42 @@ using UnityEngine;
 
 public class WaveCollisionDetector : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private ScoreManager scoreManager;
+
+    private void Start()
     {
-        if (other.CompareTag("Player"))
+        // Référence au ScoreManager dans la scène
+        scoreManager = FindObjectOfType<ScoreManager>();
+
+        if (scoreManager == null)
         {
-            Debug.Log($"Le joueur {other.name} est entré dans la vague {gameObject.name}.");
-            // Vous pouvez ajouter une logique supplémentaire ici, comme déclencher un effet visuel.
+            Debug.LogError("Aucun ScoreManager trouvé dans la scène !");
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
+        // Vérifiez si l'objet est le joueur
         if (other.CompareTag("Player"))
         {
-            Debug.Log($"Le joueur {other.name} a quitté la vague {gameObject.name}.");
-            // Ajouter une autre logique, si nécessaire.
+            // Récupérez le script ThirdPersonController pour vérifier isGrounded
+            var playerController = other.GetComponent<StarterAssets.ThirdPersonController>();
+
+            if (playerController != null)
+            {
+                if (!playerController.Grounded)
+                {
+                    // Ajouter des points si le joueur saute au-dessus de la vague
+                    scoreManager.AddPoints(10);
+                    Debug.Log("Le joueur a sauté au-dessus de la vague et gagne 10 points !");
+                }
+                else
+                {
+                    Debug.Log("Le joueur est au sol et ne gagne pas de points.");
+                }
+            }
         }
     }
 }
+
 
