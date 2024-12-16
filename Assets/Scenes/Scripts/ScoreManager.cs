@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro; 
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement; // Pour gérer les scènes
 
 public class ScoreManager : MonoBehaviour
 {
-    public static ScoreManager instance; 
+    public static ScoreManager instance;
 
     public TMP_Text scoreText; // Référence au TextMeshPro UI
     public TMP_Text highscoreText;
@@ -14,24 +14,53 @@ public class ScoreManager : MonoBehaviour
     public int score = 0; // Score initial
     public int highscore = 0;
 
-    private void Awake () {
-        instance = this;
+    public string endScreenSceneName = "EndScene"; // Nom de la scène d'écran de fin
+
+    private void Awake()
+    {
+        // Singleton pour s'assurer qu'une seule instance existe
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
     {
-       highscore = PlayerPrefs.GetInt("highscore", 0);
-       scoreText.text = score.ToString() + " points";
-       highscoreText.text = "Highscore : " + highscore.ToString();
+        // Chargement du highscore sauvegardé
+        highscore = PlayerPrefs.GetInt("highscore", 0);
+        scoreText.text = score.ToString() + " points";
+        highscoreText.text = "Highscore : " + highscore.ToString();
     }
 
-    public void AddPoints() {
+    public void AddPoints()
+    {
         score += 10;
         scoreText.text = score.ToString() + " points";
-        if (highscore < score)
-            PlayerPrefs.SetInt("highscore", score);
+
+        // Sauvegarder le highscore si le score actuel est plus élevé
+        if (score > highscore)
+        {
+            highscore = score;
+            PlayerPrefs.SetInt("highscore", highscore);
+            PlayerPrefs.Save();
+        }
+
+        // Vérification du score pour passer à l'écran de fin
+        if (score >= 200)
+        {
+            Debug.Log("Score de 200 atteint, chargement de l'écran de fin !");
+            LoadEndScreen();
+        }
     }
 
+    private void LoadEndScreen()
+    {
+        // Chargement de la scène d'écran de fin en utilisant le nom spécifié
+        SceneManager.LoadScene(endScreenSceneName);
+    }
 }
-
-
