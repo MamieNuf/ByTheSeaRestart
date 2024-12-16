@@ -30,7 +30,7 @@ public class WaveCollisionDetector : MonoBehaviour
                 if (!playerController.Grounded)
                 {
                     // Ajouter des points si le joueur saute au-dessus de la vague
-                    scoreManager.AddPoints(10);
+                    ScoreManager.instance.AddPoints();
                     Debug.Log("Le joueur a sauté au-dessus de la vague et gagne 10 points !");
                 }
                 else

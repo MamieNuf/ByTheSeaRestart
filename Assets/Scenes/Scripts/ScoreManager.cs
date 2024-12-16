@@ -2,36 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro; 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    public int score = 0; // Score initial
+    public static ScoreManager instance; 
+
     public TMP_Text scoreText; // Référence au TextMeshPro UI
+    public TMP_Text highscoreText;
+
+    public int score = 0; // Score initial
+    public int highscore = 0;
+
+    private void Awake () {
+        instance = this;
+    }
 
     private void Start()
     {
-        // Initialiser le texte avec le score actuel
-        UpdateScoreText();
+       highscore = PlayerPrefs.GetInt("highscore", 0);
+       scoreText.text = score.ToString() + " points";
+       highscoreText.text = "Highscore : " + highscore.ToString();
     }
 
-    public void AddPoints(int points)
-    {
-        score += points;
-        UpdateScoreText(); // Mettre à jour l'affichage du score
-        Debug.Log($"Score actuel : {score}");
+    public void AddPoints() {
+        score += 10;
+        scoreText.text = score.ToString() + " points";
+        if (highscore < score)
+            PlayerPrefs.SetInt("highscore", score);
     }
 
-    private void UpdateScoreText()
-    {
-        if (scoreText != null)
-        {
-            scoreText.text = $"Score : {score}";
-        }
-        else
-        {
-            Debug.LogError("Aucune référence au TextMeshPro UI !");
-        }
-    }
 }
 
 
