@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
+
     // Méthode appelée lorsque le bouton Start est cliqué
     public void StartGame()
     {

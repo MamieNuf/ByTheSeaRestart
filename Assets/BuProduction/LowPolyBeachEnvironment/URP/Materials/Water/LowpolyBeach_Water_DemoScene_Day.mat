@@ -147,7 +147,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _HightFrequency: 1.46
+    - _HightFrequency: 1
     - _Lowpoly: 1
     - _MaxTransparencyByDistance: 5.1
     - _Metallic: 0
@@ -156,16 +156,16 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.655
+    - _Smoothness: 0.621
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 5
     - _SrcBlendAlpha: 1
     - _Surface: 1
-    - _Transparency: 0.824
-    - _WaveAmplitude: 0.24
-    - _WaveNoiseScale: 730.9
-    - _WaveSpeed: 1.41
+    - _Transparency: 0.359
+    - _WaveAmplitude: 0.25
+    - _WaveNoiseScale: 30
+    - _WaveSpeed: 3.5
     - _WindAngle: 0
     - _WorkflowMode: 1
     - _ZTest: 4
