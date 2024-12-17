@@ -2775,7 +2775,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.046936356, y: -0.8927712, z: 0.43771192, w: 0.09573289}
-  m_LocalPosition: {x: 12.63, y: 23.3, z: 3.03}
+  m_LocalPosition: {x: 3.2, y: 23.3, z: 5.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8131,7 +8131,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 44.2}
+  m_AnchoredPosition: {x: 94, y: 111}
   m_SizeDelta: {x: 820, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1052842501
@@ -8154,9 +8154,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Noor always dreamed of the ocean \u2013 not just watching it, but dancing
-    with it.\nJump, ride, and groove your way across the sea.\nBut stay sharp! The
-    waves won\u2019t wait!\n\nLet\u2019s jump!"
+  m_text: "Noor always dreamed of the ocean\u2026\r\nJump, ride and groove to the
+    funky beat of the waves!\r\nCan you keep up?\r\n\r\nLet's ride!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 597acc76846d50d4eaf78c8cf12b0b27, type: 2}
   m_sharedMaterial: {fileID: 4235608209795599208, guid: 597acc76846d50d4eaf78c8cf12b0b27, type: 2}
@@ -16023,7 +16022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.13, y: -253.8}
+  m_AnchoredPosition: {x: 375, y: -118}
   m_SizeDelta: {x: 434, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2008864853
