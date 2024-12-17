@@ -12,8 +12,8 @@ public class ScoreManager : MonoBehaviour
     public TMP_Text highscoreText;
 
     public int score = 0; // Score initial
-    public int highscore = 0;
-
+    public EncouragementManager encouragementManager; 
+    
     public string endScreenSceneName = "EndScene"; // Nom de la scène d'écran de fin
 
     private void Awake()
@@ -32,9 +32,9 @@ public class ScoreManager : MonoBehaviour
     private void Start()
     {
         // Chargement du highscore sauvegardé
-        highscore = PlayerPrefs.GetInt("highscore", 0);
+       
         scoreText.text = score.ToString() + " points";
-        highscoreText.text = "Highscore : " + highscore.ToString();
+        
     }
 
     public void AddPoints()
@@ -42,13 +42,12 @@ public class ScoreManager : MonoBehaviour
         score += 10;
         scoreText.text = score.ToString() + " points";
 
-        // Sauvegarder le highscore si le score actuel est plus élevé
-        if (score > highscore)
-        {
-            highscore = score;
-            PlayerPrefs.SetInt("highscore", highscore);
-            PlayerPrefs.Save();
-        }
+       if (score == 10)
+            encouragementManager.ShowEncouragementMessage("Nice Start!");
+        else if (score == 50)
+            encouragementManager.ShowEncouragementMessage("You're on Fire!");
+        else if (score == 90)
+            encouragementManager.ShowEncouragementMessage("Almost There!");
 
         // Vérification du score pour passer à l'écran de fin
         if (score >= 100)
