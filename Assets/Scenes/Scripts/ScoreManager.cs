@@ -51,9 +51,9 @@ public class ScoreManager : MonoBehaviour
         }
 
         // Vérification du score pour passer à l'écran de fin
-        if (score >= 200)
+        if (score >= 100)
         {
-            Debug.Log("Score de 200 atteint, chargement de l'écran de fin !");
+            Debug.Log("Score de 100 atteint, chargement de l'écran de fin !");
             LoadEndScreen();
         }
     }
