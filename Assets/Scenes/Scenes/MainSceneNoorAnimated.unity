@@ -8733,7 +8733,7 @@ AudioSource:
   m_GameObject: {fileID: 1078426589}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1686225649441177038, guid: 3e45173bc883a804e853644b14862a4d, type: 2}
   m_audioClip: {fileID: 8300000, guid: 709b3836ad6ff3d43a35e39dd38e7c79, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.095
@@ -8844,7 +8844,7 @@ AudioSource:
   m_GameObject: {fileID: 1078426589}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -2158166215350012801, guid: 3e45173bc883a804e853644b14862a4d, type: 2}
   m_audioClip: {fileID: 8300000, guid: e9965113e2be45045a8d147404f553a1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -10041,17 +10041,9 @@ MonoBehaviour:
   SprintSpeed: 5
   RotationSmoothTime: 0.3
   SpeedChangeRate: 10
-  LandingAudioClip: {fileID: 8300000, guid: 02a3bd1754efab44b90dc64c5ad30ff9, type: 3}
+  LandingAudioClip: {fileID: 0}
   FootstepAudioClips:
   - {fileID: 8300000, guid: 99415e51e18500c4f830d6aaa714a673, type: 3}
-  - {fileID: 8300000, guid: 201063251e38bf0458271b0bcb3a61ae, type: 3}
-  - {fileID: 8300000, guid: 35705d4943242344d97de8cf93508901, type: 3}
-  - {fileID: 8300000, guid: ad77ffd825d4d2b4c8be8a0ea145fafa, type: 3}
-  - {fileID: 8300000, guid: aab3a4a74ae75744a833777c3f349b74, type: 3}
-  - {fileID: 8300000, guid: 33732382e36340e4dbc74d4c5f9c49f6, type: 3}
-  - {fileID: 8300000, guid: 2fab5c27f32140b4492e988f2dbda964, type: 3}
-  - {fileID: 8300000, guid: 036d59696aee3104fa0fe4f1ee3c0ec8, type: 3}
-  - {fileID: 8300000, guid: 86684fb23429f3345bbc4b85ea5d4a34, type: 3}
   FootstepAudioVolume: 0.3
   JumpHeight: 2
   Gravity: -15

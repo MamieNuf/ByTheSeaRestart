@@ -11,10 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenes/MainSceneNoorAnimated.unity
     guid: 332dbcecea13ce94a9a8b9f313efadad
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scenes/EndSceneCOPY.unity
     guid: e520df5f149c03e45af21832f4b81692
   - enabled: 1
     path: Assets/Scenes/Scenes/NarrationScene.unity
     guid: 2c8412eac0cb54c48bfa905e0e75eea0
+  - enabled: 1
+    path: Assets/Scenes/Scenes/EndScene.unity
+    guid: 9045e74576e194548825759838d1c91b
   m_configObjects: {}
