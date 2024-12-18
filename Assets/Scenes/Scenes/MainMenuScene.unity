@@ -3023,6 +3023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catamaran_Monotype_C Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7349387565059308868, guid: a1991d7622660c34187e895e26726d28, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7977446836476061694, guid: a1991d7622660c34187e895e26726d28, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -3759,6 +3763,10 @@ PrefabInstance:
     - target: {fileID: 7349387565059308868, guid: a1991d7622660c34187e895e26726d28, type: 3}
       propertyPath: m_Name
       value: Catamaran_Monotype_C Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349387565059308868, guid: a1991d7622660c34187e895e26726d28, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7977446836476061694, guid: a1991d7622660c34187e895e26726d28, type: 3}
       propertyPath: m_RootOrder
@@ -18657,6 +18665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catamaran_Monotype_C Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7349387565059308868, guid: a1991d7622660c34187e895e26726d28, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7977446836476061694, guid: a1991d7622660c34187e895e26726d28, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -32477,6 +32489,10 @@ PrefabInstance:
     - target: {fileID: 2754566041136379169, guid: a90be2f9062bc9949a26e64249e18cd7, type: 3}
       propertyPath: m_Name
       value: Catamaran_Monotype_B Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754566041136379169, guid: a90be2f9062bc9949a26e64249e18cd7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3274679418466463643, guid: a90be2f9062bc9949a26e64249e18cd7, type: 3}
       propertyPath: m_RootOrder
